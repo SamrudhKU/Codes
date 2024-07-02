@@ -1,0 +1,1 @@
+1) Check the even or odd using the bitwise & operator, if it is 1 then odd else even.
