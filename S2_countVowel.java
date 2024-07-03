@@ -15,7 +15,7 @@ public class S2_countVowel {
     }
     
     public static void main(String[] args) {
-        String str = "aaaeiouasdfadsfasdfadsf";
+        String str = "Samrudh";
         System.out.println(countVowel(str, str.length()));
 
     }
