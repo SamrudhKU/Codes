@@ -35,8 +35,6 @@
 # search_element = ['aaa','bbb','ccc']
 # print(find(3,data_arraya,search_element))
 
-
-if(6%10==0):
-    print("true")
-else:
-    print("false")
+a=56
+b=70
+print(a%b)

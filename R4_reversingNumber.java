@@ -1,4 +1,4 @@
-public class R3_reversingNumber {
+public class R4_reversingNumber {
 
     public static void reversedNum(int num){
         if (num<10) {

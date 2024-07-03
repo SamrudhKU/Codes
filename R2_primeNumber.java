@@ -6,6 +6,8 @@ public class R2_primeNumber {
         if (num % i == 0) {
             return false;
         }
+
+        // It help to call the function up to the sqrt of the number
         if (num > i * i) {
             return true;
         }
@@ -16,7 +18,7 @@ public class R2_primeNumber {
         int num = 7;
         int i = 2;
         if (isPrime(num, i)) {
-            System.out.println(" Prime Number");
+            System.out.println("Prime Number");
         } else {
             System.out.println("not Prime Number");
         }

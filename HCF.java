@@ -26,30 +26,30 @@ public class HCF {
         int num2 = 36;
 
         // Using the recursion function
-        int hcf = getHCF(num1, num2);
-        System.out.println(hcf);
-
-        // int lend = (int) Math.sqrt(num2);
-        // int i = 2;
-        // int hcf = 1;
-        // while(lend>i){
-        // if(num1%i==0 && num2%i==0){
-        // hcf *= i;
-        // num1/=i;
-        // num2/=i;
-        // } else {
-        // i++;
-        // }
-        // }
+        // int hcf = getHCF(num1, num2);
         // System.out.println(hcf);
 
-        // while (num1!=num2) {
-        // if(num1>num2)
-        // num1-=num2;
-        // else
-        // num2-=num1;
-        // }
-        // System.out.println(num2);
+       
+        int i = 2;
+        int hcf = 1;
+        while((int) Math.sqrt(num2)>i){
+        if(num1%i==0 && num2%i==0){
+        hcf *= i;
+        num1/=i;
+        num2/=i;
+        } else {
+        i++;
+        }
+        }
+        System.out.println(hcf);
+
+        while (num1!=num2) {
+        if(num1>num2)
+        num1-=num2;
+        else
+        num2-=num1;
+        }
+        System.out.println(num2);
 
     }
 }
