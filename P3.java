@@ -6,6 +6,12 @@ public class P3 {
                 System.out.print(" * ");
             }
             System.out.println();
+
+            // Program output
+            // * 
+            // *  *
+            // *  *  *
+            // *  *  *  *
         }
     }
 }
