@@ -10,8 +10,12 @@ public class P5 {
             }
             System.out.println();
 
-        //     Program output
-   
-        }
+        //  Program output
+        //      *
+        //     **
+        //    ***
+        //   ****
+        //  *****
+        } 
     }
 }

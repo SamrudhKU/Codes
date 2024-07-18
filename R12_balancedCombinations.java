@@ -1,4 +1,4 @@
-// 
+// Generating all the possible combination of the closed parenthesis
 public class R12_balancedCombinations {
     public static void patterCombanition(int n, int open, int close, String str) {
 

@@ -1,3 +1,4 @@
+// This program shows how to strore the subSequence in Array from
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,9 @@ public class S12_commonSubSequence {
         for (String string : subSequence1) {
             System.out.print(string+" ");
         }
+
         System.out.println();
+
         for (String string : subSequence2) {
             System.out.print(string+" ");
         }

@@ -26,11 +26,12 @@ public class A5_sortHalf {
         //     }
         // }
         
-        // printing first half of the array
+        // Printing first half of the array
         for (int i = 0; i < arr.length/2; i++) {
             System.out.print(arr[i]+" ");
         }
 
+        // Printing second half of the array in reveseing order
         for (int i = arr.length-1; i >= arr.length/2; i--) {
             System.out.print(arr[i]+" ");
         }

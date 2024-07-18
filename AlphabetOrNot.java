@@ -7,7 +7,7 @@ public class AlphabetOrNot {
         System.out.println("Enter a character");
         char ch = s.next().charAt(0);
         ch = Character.toUpperCase(ch);
-        int ascii = (char)ch;
+        
 
         // it uses assci values
         // if (ascii>=65 && ascii<=90) {

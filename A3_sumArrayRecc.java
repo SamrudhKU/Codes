@@ -22,7 +22,8 @@ public class A3_sumArrayRecc {
 
     public static void main(String[] args) {
         int arr[] = {12,32,43,12,34,23,24};
-        int i = 0, sum=0;
+        int i = 0;
+        // int sum = 0;
         // System.out.println(sumOfArray(arr, i, sum));
 
         System.out.println(sumOfArray(arr, i));

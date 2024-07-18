@@ -15,7 +15,13 @@ public class P6 {
                 }
             }
             System.out.println();
-
         }
+    //     Program output:
+    //      *
+    //     * *
+    //    *   *
+    //   *     *
+    //  *       *
+    // * * * * * *
     }
 }

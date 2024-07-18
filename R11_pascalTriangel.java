@@ -1,5 +1,6 @@
 // This program is to print the Pascal's triangle
 public class R11_pascalTriangel {
+    
     // public static int[] pTriangle(int i, int[] arr){
     // if (i==arr.length) {
     // return arr;
@@ -45,7 +46,7 @@ public class R11_pascalTriangel {
     public static void main(String[] args) {
         // pTriangle(n,0, arr);
 
-        int n = 5;
+        int n = 20;
         printSequence(n);
 
         // Requeries for normal method

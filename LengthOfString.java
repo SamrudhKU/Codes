@@ -5,7 +5,7 @@ public class LengthOfString {
         String str = "Samrudh";
         int i = 0;
         char[] ch = str.toCharArray();
-        for (char st : ch) {
+        for (@SuppressWarnings("unused") char st : ch) {
             i++;
         }
         System.out.println(i);

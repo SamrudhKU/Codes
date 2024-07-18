@@ -1,4 +1,4 @@
-import java.util.Arrays;
+// import java.util.Arrays;
 
 public class S9_frequencyOfChar {
 
@@ -11,8 +11,8 @@ public class S9_frequencyOfChar {
     // count[112] value would be 2 (p appears twice)
     static void buildCharCountArray(String str) {
         for (int i = 0; i < str.length(); i++) {
+            // In char array the at str.charAt(i) this index it will increment the count
             count[str.charAt(i)]++;
-            int ch = count[str.charAt(i)];
         }
     }
 
@@ -25,7 +25,6 @@ public class S9_frequencyOfChar {
         int pos = -1, i;
 
         for (i = 0; i < string.length(); i++) {
-            int ch2 = count[string.charAt(i)];
             if (count[string.charAt(i)] == 1) {
                 pos = i;
                 break;

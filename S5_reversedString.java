@@ -4,10 +4,10 @@ public class S5_reversedString {
         if (i<0) {
             return "";
         }
-        
         char ch = str.charAt(i);
         return ch + reversedString(str, i-1);
     }
+    
     public static void main(String[] args) {
         String str = "Samrudh";
 

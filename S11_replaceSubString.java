@@ -3,7 +3,7 @@ class S11_replaceSubString {
         String original  = "Hello World";
         String toReplace = "World";
         String toAdd = "Java";
-        String modifiedString = "";
+        // String modifiedString = "";
 
         String[] originalArray = original.split(" ");
         for (int i = 0; i < originalArray.length; i++) {

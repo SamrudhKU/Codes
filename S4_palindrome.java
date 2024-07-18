@@ -21,8 +21,6 @@ public class S4_palindrome {
     public static void main(String args[]){
         String str = "Samrudh";
 
-        
-        
         if (isPalindrome(str, 0)) {
             System.out.println("Palindrome");
         } else {

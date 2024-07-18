@@ -10,7 +10,7 @@ public class A12_subsetOrNot {
     }
 
     private static boolean isSubet(int[] arr1, int[] arr2) {
-        int count = 0;
+        // int count = 0;  //for coint logic
         int i = 0;
         int j = 0;
         for ( i = 0; i < arr2.length; i++) {
@@ -21,6 +21,7 @@ public class A12_subsetOrNot {
                 } 
             }    
 
+            // another logic by checking if not present in all the elemetns
             if (j==arr1.length) {
                 return false;
             }
@@ -29,6 +30,8 @@ public class A12_subsetOrNot {
         //     return true;
         // }
 
+
+        // return true; // for count logic
         return true;
 
     }
