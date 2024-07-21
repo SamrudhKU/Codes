@@ -1,12 +1,15 @@
+import java.util.Arrays;
+
 public class A18_jugglingAlgo {
 
-    public static int hcf(int a, int b){
-        if (b==0) {
+    public static int hcf(int a, int b) {
+        if (b == 0) {
             return a;
         } else {
-            return hcf(b, a%b);
+            return hcf(b, a % b);
         }
     }
+
     public static void main(String[] args) {
         int arr[] = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         int noOfRotation = 3;
@@ -25,13 +28,14 @@ public class A18_jugglingAlgo {
                 l=m;
             }
             arr[l] = temp;
+            System.out.println(Arrays.toString(arr));
         }
 
         // Hear swift will work 
-        // start: 123456879
-        // 1> 423756189
-        // 2> 453786129
-        // 3> 456789123
+        // start: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        // 1> [4, 2, 3, 7, 5, 6, 1, 8, 9]
+        // 2> [4, 5, 3, 7, 8, 6, 1, 2, 9] 
+        // end 3> [4, 5, 6, 7, 8, 9, 1, 2, 3]
 
         for(int i : arr){
             System.out.print(i+" ");

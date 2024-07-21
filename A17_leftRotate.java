@@ -1,4 +1,4 @@
-
+// Hear we are implementing block swap algorithm
 class A17_leftRotate {
 
     public static void leftRotate(int arr[], int d, int n) {
@@ -35,7 +35,7 @@ class A17_leftRotate {
 
     public static void main(String[] args) {
         int arr[] = { 10, 20, 30, 40 };
-        leftRotate(arr, 2, 4);
+        leftRotate(arr, 1, 4);
 
         for (int i = 0; i < 4; i++)
             System.out.print(arr[i] + " ");
