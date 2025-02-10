@@ -14,13 +14,13 @@ public class S4_palindrome {
             return true;
         } 
         isPalindrome(str, i+1);
-
         return false;
         
     }
     public static void main(String args[]){
-        String str = "Samrudh";
-
+        // String str = "Samrudh";
+        String str = "Malayalam";
+        str = str.toUpperCase();
         if (isPalindrome(str, 0)) {
             System.out.println("Palindrome");
         } else {

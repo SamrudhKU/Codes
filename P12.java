@@ -8,5 +8,11 @@ public class P12 {
             }
             System.out.println();
         }
+        // Patter
+        // 10987
+        // 654
+        // 32
+        // 1
+
     }
 }

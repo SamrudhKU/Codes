@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+// This program is to move the zero's in arrays to the last
 public class l2 {
 
     public static void replaceZeros(int arr[]){
@@ -16,7 +17,6 @@ public class l2 {
                 index++;
             }
         }
-        System.out.println(index);
         while (index<arr.length) {
             arr[index] = 0;
             index++;

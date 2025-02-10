@@ -1,6 +1,6 @@
 public class DS_BinarySearch {
 
-    // Time complexity for 
+    // Time complexity O(log n) 
     public static void main(String args[]) {
 
         int arr[] = new int[] { 1, 2, 3, 4, 5, 6 };

@@ -21,7 +21,7 @@ public class DS_SelectionSort {
                 temp = arr[max];
                 arr[max] = arr[j-1];
                 arr[j-1] = temp;  
-                // System.out.println(Arrays.toString(arr));
+                System.out.println(Arrays.toString(arr));
         }
 
 

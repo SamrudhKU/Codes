@@ -1,10 +1,7 @@
-import java.util.Arrays;
-
 public class A6_frequencyOfElement {
     public static void main(String[] args) {
         int arr[] = new int[] { 1, 1, 5, 1, 2, 36, 4, 88, 36, 88, 88 };
         boolean[] visited = new boolean[arr.length];
-        Arrays.fill(visited, false);
         for (int i = 0; i < arr.length; i++) {
             if (visited[i] == true) {
                 continue;
@@ -16,8 +13,11 @@ public class A6_frequencyOfElement {
                     visited[j] = true;
                 }
             }
-            System.out.println(arr[i] + " Occurs " + count + " times");
+            System.out.println(arr[i] +" Occurs " + count + " times");
         }
+
+        
+       
 
     }
 }

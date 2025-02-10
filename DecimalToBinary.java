@@ -4,7 +4,7 @@ public class DecimalToBinary{
     public static void main(String[] args) {
         int i=0;
         int binary [] = new int [8];
-        int num = 8;
+        int num = 15;
         while (num>0){
             binary[i++] = num%2;
             num/=2;

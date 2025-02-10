@@ -6,5 +6,11 @@ public class P11 {
             }
             System.out.println();
         }
+        // Pattern 
+        // 3
+        // 44
+        // 555
+        // 6666
+        // 77777
     }
 }

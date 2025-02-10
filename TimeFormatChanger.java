@@ -1,4 +1,4 @@
-
+// This program will change the time format from 12 hours to 24 hours
 
 public class TimeFormatChanger {
 

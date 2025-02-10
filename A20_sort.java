@@ -12,8 +12,6 @@ public class A20_sort {
                 swap(arr, i, k);
                 k--;
             }
-
-            
         }
     }
 
@@ -26,10 +24,17 @@ public class A20_sort {
         int arr[] = new int[]{1,0,1,0,2,2,1};
 
         arrange(arr);
-
         for (int j : arr) {
             System.out.print(j+" ");
         }
+
+        // Iteration are 
+        // [1, 2, 0, 2, 0, 1]
+        // [1, 1, 0, 2, 0, 2]
+        // [1, 1, 0, 2, 0, 2]
+        // [0, 1, 1, 2, 0, 2]
+        // [0, 1, 1, 0, 2, 2]
+        //   [0, 0, 1, 1, 2, 2]
 
 
         // int countZero = 0;

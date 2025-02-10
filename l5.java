@@ -1,3 +1,5 @@
+// This program is to buy and sell the stock to get the maximum profit.
+
 public class l5 {
     public static void main(String args[]){
         // int arr[] = new int[]{7,1,5,3,6,4};

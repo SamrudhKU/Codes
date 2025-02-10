@@ -22,8 +22,10 @@ public class S14_balancedParentheis {
     //     return false;
     // }
 
+    @SuppressWarnings("unchecked")
     private static boolean checkBalance(String str){
         // It push the character into stack and it will check while pop the character
+        @SuppressWarnings("rawtypes")
         Stack stack = new Stack<>();
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == '(' || str.charAt(i) == '{' || str.charAt(i) == '[') {

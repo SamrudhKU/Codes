@@ -24,6 +24,8 @@ public class S3_removeVowel {
         String str = "Samrudh";
 
         System.out.println(removeVowel(str));
+
+        
         // This adds consolents to new String
         // str = str.toUpperCase();
         // String str1 = "";

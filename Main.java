@@ -1,44 +1,45 @@
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-public class Main {
-    @SuppressWarnings({ "rawtypes", "unchecked" })
-    public static boolean balancedParenthesis(String str) {
-        Stack stack = new Stack();
-        for (int i = 0; i < str.length(); i++) {
-            char x = str.charAt(i);
-            if (x == '(' || x == '[' || x == '{') {
-                stack.push(x);
-                continue;
-            }
-            if (stack.isEmpty())
-                return false;
-            char check;
-            switch (x) {
-                case ')':
-                    check = (char) stack.pop();
-                    if (check == '{' || check == '[')
-                        return false;
-                    break;
-                case '}':
-                    check = (char) stack.pop();
-                    if (check == '(' || check == '[')
-                        return false;
-                    break;
-                case ']':
-                    check = (char) stack.pop();
-                    if (check == '(' || check == '{')
-                        return false;
-                    break;
-            }
-        }
-        return (stack.isEmpty());
-    }
-
-    public static void main(String[] args) {
-        String str = "(){[]]";
-        if (balancedParenthesis(str))
-            System.out.println("True");
-        else
-            System.out.println("False");
-    }
+interface Demo {
+    default void show(){
+    System.out.println("He;;pw");
+   }
 }
+
+public class Main implements Demo {
+    public static void main(String[] args) throws IOException {
+
+        // Demo d = () ->System.out.println("Hello World");
+        
+        Main m = new Main();
+        m.show();
+        System.out.println(10+20+"A");
+        // int  a = System.in.read();
+        // System.out.println((char)a);
+
+        // InputStreamReader in = new InputStreamReader(System.in);
+        // BufferedReader bf = new BufferedReader(in);
+        
+        // int k = Integer.parseInt(bf.readLine());
+        // System.out.println(k);
+
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

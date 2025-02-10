@@ -1,49 +1,35 @@
 public class R16_removeAdjacentDuplicateChar {
 
-    // public static void adjacentDuplicateChar(String str, String nstr,char ch,
-    // char nch, int sindex, int nindex ){
-    // if (str.length()-1 == sindex) {
-    // if (str.charAt(sindex) != ch && nch != str.charAt(sindex)) {
-    // nstr = nstr+str.charAt(sindex);
-    // }
-    // System.out.println(nstr);
-    // return;
-    // }
-    // if (str.charAt(sindex) == str.charAt(sindex+1)) {
-    // adjacentDuplicateChar(str, nstr, ch, nch, sindex+2, nindex);
-    // }
-    // if (str.charAt(sindex) == ch) {
-    // adjacentDuplicateChar(str, nstr, ch, nch, sindex+1, nindex);
-    // }
-    // if (str.charAt(sindex) != str.charAt(sindex+1) && str.charAt(sindex) !=
-    // nstr.charAt(nindex) && nstr.charAt(nindex) != str.charAt(sindex)) {
-    // ch = str.charAt(sindex);
-    // adjacentDuplicateChar(str, nstr+str.charAt(sindex), ch, nstr.charAt(nindex),
-    // sindex+1, nindex+1 );
-    // }
-    // }
-
     public static String adjacentDuplicateChar(String str) {
         if (str.length() <= 1) {
             return str;
         }
+
+        // To store once duplicate element removed
         StringBuilder sb = new StringBuilder();
         int i = 0;
 
+        // Iterate through all the elements
         while (i < str.length()) {
             int j = i;
+
+            // To find if the duplicate element is present 
             while (j < str.length() - 1 && str.charAt(j) == str.charAt(j + 1)) {
                 j++;
             }
 
+            // If j is not increment. It means no duplicate adjacent element
             if (i == j) {
                 sb.append(str.charAt(i));
             }
 
+            // Increment to the next character to the string
             i = j + 1;
         }
 
         String output = sb.toString();
+
+        // If the string length and output length matches it means there no adjacent duplicate elements found
         if (output.length() == str.length()) {
             return output;
         } else {
@@ -60,48 +46,3 @@ public class R16_removeAdjacentDuplicateChar {
 
     }
 }
-
-// public class R16_removeAdjacentDuplicateChar {
-
-// // Recursive function to remove all adjacent duplicates
-// public static String removeAdjacentDuplicates(String str) {
-// // Base case: If the string is empty or has only one character
-// if (str.length() <= 1) {
-// return str;
-// }
-
-// // Iterate through the string and remove adjacent duplicates
-// StringBuilder sb = new StringBuilder();
-// int i = 0;
-// while (i < str.length()) {
-// // Check if the current character is the same as the next character
-// int j = i;
-// while (j < str.length() - 1 && str.charAt(j) == str.charAt(j + 1)) {
-// j++;
-// }
-
-// // If adjacent duplicates were found, skip them
-// if (j == i) {
-// sb.append(str.charAt(i));
-// }
-
-// // Move to the next unique character
-// i = j + 1;
-// }
-
-// // Recursively call the function until no more adjacent duplicates are found
-// String result = sb.toString();
-// if (result.length() == str.length()) {
-// return result;
-// } else {
-// return removeAdjacentDuplicates(result);
-// }
-// }
-
-// public static void main(String[] args) {
-// String input = "abbaca";
-// String output = removeAdjacentDuplicates(input);
-// System.out.println("Original String: " + input);
-// System.out.println("String after removing adjacent duplicates: " + output);
-// }
-// }

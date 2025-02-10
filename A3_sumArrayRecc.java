@@ -1,5 +1,7 @@
 // This is the array of sum using the Recursion
 
+import java.util.Arrays;
+
 public class A3_sumArrayRecc {
 
     // public static int sumOfArray(int arr[], int i, int sum) {
@@ -13,19 +15,19 @@ public class A3_sumArrayRecc {
     //     return sumOfArray(arr, i+1, sum);
     // }
 
-    public static int sumOfArray(int arr[], int i) {
-        if(i==arr.length-1){            
+    public static int sumOfArray(int arr[], int i){
+        if (i==arr.length-1) {
             return arr[i];
         }
         return arr[i] + sumOfArray(arr, i+1);
     }
-
     public static void main(String[] args) {
         int arr[] = {12,32,43,12,34,23,24};
-        int i = 0;
-        // int sum = 0;
-        // System.out.println(sumOfArray(arr, i, sum));
+        System.out.println(sumOfArray(arr, 0));
 
-        System.out.println(sumOfArray(arr, i));
+
+        // int sum = 0;
+        // System.out.println(sumOfArray(arr, 0, sum));
+
     }
 }

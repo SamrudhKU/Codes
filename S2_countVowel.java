@@ -11,7 +11,7 @@ public class S2_countVowel {
         if (i == 1)
             return isVolwe(str.charAt(i-1));
 
-        return countVowel(str, i-1) + isVolwe(str.charAt(i-1));
+        return countVowel(str, i-1) + isVolwe(str.charAt(i-1)); 
     }
     
     public static void main(String[] args) {

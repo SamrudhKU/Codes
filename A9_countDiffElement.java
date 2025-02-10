@@ -27,9 +27,8 @@ public class A9_countDiffElement {
     
 
             // To get the non reapted element
-    
             // if (arr[i]!=0) {
-            //     System.out.println(arr);
+            //     System.out.println(arr[i]);
             // }
 
         }

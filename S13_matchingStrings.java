@@ -44,8 +44,8 @@ public class S13_matchingStrings {
     // Main method to execute the program.
     public static void main(String[] args) {
         // Define two strings for comparison.
-        String st1 = "abbcd";
-        String st2 = "a*c?";
+        String st1 = "ab";
+        String st2 = "cb";
         System.out.println("The given string is: " + st1);
         System.out.println("The given pattern string is: " + st2);
 

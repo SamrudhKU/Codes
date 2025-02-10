@@ -1,7 +1,7 @@
 // program to conver the first and last Character to capital
 public class S8_capitalize {
     public static String capitalize(String str) {
-        if (str.length()<=2) {
+        if (str.length()<2) {
             str = str.toUpperCase();
             return str;
         }

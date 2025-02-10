@@ -1,3 +1,5 @@
+// This program is to find the profit in market, array contains the stock market prices.
+
 public class l3 {
     public static void main(String args[]) {
         int prices[] = new int[]{8,1,5,8,6,4};

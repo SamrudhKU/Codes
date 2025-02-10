@@ -9,7 +9,7 @@ public class A8_longestPalindrome {
                 }
             }
         }
-        System.out.println(max);
+        System.out.println("longest Palindrome number: "+max);
     }
 
     static boolean isPalindrome(int num) {

@@ -16,7 +16,7 @@ public class A5_sortHalf {
 
         // It will sort the second half of the array in decending order
         // int n = (arr.length)/2;
-        // for (int i =n; i<arr.length; i++) {
+        // for (int i = n; i<arr.length; i++) {
         //     for (int j = i; j < arr.length; j++) {
         //         if(arr[i]<arr[j]){
         //             int temp = arr[i];

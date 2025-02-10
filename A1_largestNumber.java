@@ -13,7 +13,6 @@ public class A1_largestNumber {
             if(arr[i]<min){
                 min = arr[i];
             }
-
         }
 
         System.out.println("Maximum Element: "+max);

@@ -30,7 +30,7 @@ public class SynchronizedThread {
         t1.start();
 
         t.join();
-        // t1.join();
+        t1.join();
 
         System.out.println("Counter Value: "+ c.getCount());
 
