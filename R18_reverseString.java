@@ -1,4 +1,4 @@
-public class R17_palindrome {
+public class R18_reverseString {
     
     public static String reverse(String str) {
         // Base case: if the string is empty or has only one character
