@@ -2,7 +2,7 @@ public class FibonacciSeries {
 
     static int num1 = 0, num2 = 1, sum;
     public static void main(String[] args) {
-        int range = 15;
+        int range = 7;
         range-=2;
         // System.out.print(num1+" ");
         // System.out.print(num2+" ");

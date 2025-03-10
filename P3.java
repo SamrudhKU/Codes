@@ -1,4 +1,6 @@
+
 public class P3 {
+   
     public static void main(String[] args) {
         int row = 4;
         for (int i = 0; i < row; i++) {

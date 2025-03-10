@@ -33,7 +33,6 @@ public class p2_StringPatternOperation {
             }
         }
 
-        
         s.close();
     }
 }

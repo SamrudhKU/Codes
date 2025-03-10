@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class practice1 {
@@ -14,11 +15,11 @@ public class practice1 {
 
     public static int[] bubbleSorting(int arr[]){
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                if (arr[i]<arr[j]) {
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
+            for (int j = 0; j < arr.length-1; j++) {
+                if (arr[j]>arr[j+1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
                 }
             }
         }  
@@ -39,17 +40,17 @@ public class practice1 {
     }
 
     public static int secondMaxElement(int arr[]){
-        int max = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i]>max)
-                max = arr[i];
+       int max = Integer.MIN_VALUE;
+        int secondMaxElement = Integer.MIN_VALUE;
+        for (int num : arr) {
+            if (num>max) {
+                secondMaxElement = max;
+                max = num;
+            } else if (num>secondMaxElement && num!=max) {
+                secondMaxElement = num;
+            }
         }
-        int secondMax = Integer.MAX_VALUE;
-        for(int i = 0; i<arr.length;i++){    
-            if (arr[i]<max && arr[i]!=secondMax) 
-               secondMax = arr[i];
-        }
-        return secondMax;
+        return (secondMaxElement==Integer.MIN_VALUE) ? -1 : secondMaxElement;
     }
 
     public static int binarySearch(int arr[], int target){
@@ -62,7 +63,7 @@ public class practice1 {
             } else if(arr[mid] < target){
                 start = mid+1;
             } else {
-                end-=1;
+                end=mid-1;
             }
         }
         return -1;
@@ -132,7 +133,6 @@ public class practice1 {
         for(int i=0; i<r1; i++){
             rarr[i] = arr[m+1+i];
         }
-
         int i = 0;
         int j = 0;
         int k = l;
@@ -146,20 +146,31 @@ public class practice1 {
             }
             k++;
         }
-
         while(i<l1){
             arr[k] = larr[i];
             i++;
             k++;
         }
-
         while(j<r1){
             arr[k] = rarr[j];
             j++;
             k++;
         }
-        
+    }
 
+    public static int[] insertionSort(int arr[]){
+        // int arr4[] = {4,2,5,1,3};
+        for (int i = 1; i < arr.length; i++) {
+            int cv = arr[i];
+            int pi = i-1;
+            while(pi>=0 && arr[pi]>cv){
+                arr[pi+1] = arr[pi];
+                pi--;
+
+            }
+            arr[pi+1] = cv;
+        }
+        return arr;
     }
     public static void main(String...Samrudh){
         int arr[] = {1,3,4,5,2};
@@ -171,7 +182,8 @@ public class practice1 {
         System.out.println("Bubble sorting "+Arrays.toString(bubbleSorting(arr)));
 
         // Finding second largest element
-        System.out.println("Second larget element "+secondMaxElement(arr));
+        int arr3[] ={3,5,4,2,1};
+        System.out.println("Second larget element "+secondMaxElement(arr3));
 
         // reverseSorting
         System.out.println("Reverse Bubble sorting "+Arrays.toString(reverseSorting(arr)));
@@ -185,11 +197,17 @@ public class practice1 {
 
         // Quick sort
         int arr2[] = { 2, 5, 4, 1, 3 };
-
         System.err.println("Quick sort " +Arrays.toString(quickSort(arr2, 0, arr2.length-1)));
 
         // Merge sort
-        System.err.println("Merge sort "+Arrays.toString(mergeSort(arr, 0, arr.length-1)));
+        int arr5[] = { 2, 5, 4, 1, 3 };
 
+        System.err.println("Merge sort "+Arrays.toString(mergeSort(arr5, 0, arr.length-1)));
+
+        // Insertion sort
+        int arr4[] = {4,2,5,1,3};
+        System.out.println("Insertion sort"+Arrays.toString(insertionSort(arr4))); 
+
+    
     }
 }
