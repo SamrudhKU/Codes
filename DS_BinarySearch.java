@@ -7,7 +7,7 @@ public class DS_BinarySearch {
         int target = 2;
 
         // int result = binarySearch(arr, target);
-        int result = binarySearch(arr, target, 0, arr.length-1);
+        int result = binarySearch(arr, target);
         if (result != -1) {
             System.out.println("Element is found at index: " + result);
         } else {
