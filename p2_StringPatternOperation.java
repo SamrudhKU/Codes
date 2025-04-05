@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class p2_StringPatternOperation {
+public class P2_StringPatternOperation {
     public static void main(String args[]){
         Scanner s = new Scanner(System.in);
 

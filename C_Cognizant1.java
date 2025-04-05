@@ -1,4 +1,4 @@
-public class Cognizant {
+public class C_Cognizant1 {
     public static int calculateRemainingWater(int N, int K, int M, int[] A, int[] B) {
         if (N <= 0 || K <= 0 || M < 0 || A.length != N || B.length != N) {
             return 0;

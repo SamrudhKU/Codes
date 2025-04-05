@@ -14,8 +14,10 @@ public class R8_permutaionOfString {
             permute(r, ans+ch);
         }
     }
+
     public static void main (String args[]){
-        String str = "abcd";
+        String str = "abc";
         permute(str, "");
+       
     }
 }
