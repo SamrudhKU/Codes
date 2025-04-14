@@ -5,32 +5,39 @@ import java.util.Scanner;
 public class L3_romanToInt {
 
     public static int romanToInt(String str) {
-        str = str.toUpperCase();
         int num = 0;
         int ans = 0;
         for (int i = str.length() - 1; i >= 0; i--) {
             switch (str.charAt(i)) {
-                case 'I': num = 1;
+                case 'I':
+                    num = 1;
                     break;
-                case 'V': num = 5;
+                case 'V':
+                    num = 5;
                     break;
-                case 'X': num = 10;
+                case 'X':
+                    num = 10;
                     break;
-                case 'L': num = 50;
+                case 'L':
+                    num = 50;
                     break;
-                case 'C': num = 100;
+                case 'C':
+                    num = 100;
                     break;
-                case 'D': num = 500;
+                case 'D':
+                    num = 500;
                     break;
-                case 'M': num = 1000;
+                case 'M':
+                    num = 1000;
                     break;
                 default:
                     break;
             }
-            if (4*num < ans) 
+            if (num*4<ans) {
                 ans-=num;
-            else 
+            } else {
                 ans+=num;
+            }
         }
         return ans;
     }
@@ -38,8 +45,8 @@ public class L3_romanToInt {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        // System.out.println(romanToInt("MCMXCIV"));
-        System.out.println(romanToInt("III"));
+        System.out.println(romanToInt("MCMXCIV"));
+        // System.out.println(romanToInt("III"));
 
         // int I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000;
         // Map<Character, Integer> mp = new HashMap<>();
