@@ -33,7 +33,7 @@ public class DS_QuickSort {
 
     public static void main(String args[]) {
         // int nums[] = new int[] { 1, 3, 6, 5, 4, 2 };
-        int nums[] = new int[] { 1, 3, 2 ,4};
+        int nums[] = { 1, 3, 2 ,4};
 
         quickSort(nums, 0, nums.length - 1);
         System.out.println(Arrays.toString(nums));

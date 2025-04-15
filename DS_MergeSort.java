@@ -10,6 +10,8 @@ public class DS_MergeSort {
     }
 
     public static void merge(int[] arr, int low, int mid, int high){
+
+        // Creating a two differnt array to store the left and right half of the array
         int n1 = mid-low+1;
         int n2 = high-mid;
         int larr[] = new int[n1];
@@ -52,5 +54,6 @@ public class DS_MergeSort {
         for(int num : arr){
             System.out.print(num+" ");
         }
+
     }
 }
