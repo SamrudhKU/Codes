@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class practice1 {
@@ -52,6 +51,30 @@ public class practice1 {
         }
         return (secondMaxElement==Integer.MIN_VALUE) ? -1 : secondMaxElement;
     }
+
+    public static int thirdLargestElement(int[] arr) {
+        if (arr.length < 3) {
+            throw new IllegalArgumentException("Array must have at least 3 elements");
+        }    
+        Integer first = null, second = null, third = null;
+        for (int num : arr) {
+            if (first == null || num > first) {
+                third = second;
+                second = first;
+                first = num;
+            } else if ((second == null || num > second) && num != first) {
+                third = second;
+                second = num;
+            } else if ((third == null || num > third) && num != second && num != first) {
+                third = num;
+            }
+        }
+        if (third == null) {
+            throw new RuntimeException("No third distinct element found");
+        }
+        return third;
+    }
+    
 
     public static int binarySearch(int arr[], int target){
         int start = 0;
@@ -185,6 +208,10 @@ public class practice1 {
         int arr3[] ={3,5,4,2,1};
         System.out.println("Second larget element "+secondMaxElement(arr3));
 
+        // Finding third largest element
+        int arr6[] = {3,5,1,4,2};
+        System.out.println("Third largest element: "+thirdLargestElement(arr6));
+        
         // reverseSorting
         System.out.println("Reverse Bubble sorting "+Arrays.toString(reverseSorting(arr)));
 
@@ -208,6 +235,5 @@ public class practice1 {
         int arr4[] = {4,2,5,1,3};
         System.out.println("Insertion sort"+Arrays.toString(insertionSort(arr4))); 
 
-    
-    }
+      }
 }
