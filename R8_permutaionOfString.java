@@ -17,6 +17,7 @@ public class R8_permutaionOfString {
 
     public static void main (String args[]){
         String str = "abc";
+        // Solution: abc acb bac bca cab cba
         permute(str, "");
        
     }

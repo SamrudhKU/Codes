@@ -56,7 +56,8 @@ public class S14_balancedParentheis {
         return stack.isEmpty();
     }
     public static void main(String[] args) {
-        String str = "()(({}))";
+        // String str = "()({(}))"; // NOt Balanced
+        String str = "()(({}))"; // Balanced
         if(checkBalance(str)){
             System.out.println("Balanced");
         } else {

@@ -14,6 +14,7 @@ public class R19_longestCommonSequency {
 
         String str1 = "ABCDGH";
         String str2 = "AEDFHR";
+        // Solution: ADH
         int length = lcs(str1, str2, str1.length(), str2.length());
         System.out.println("Longest Common Sequence "+length);
     }

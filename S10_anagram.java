@@ -3,10 +3,8 @@
 import java.util.Arrays;
 
 public class S10_anagram {
-    public static void main(String[] args) {
-        String str1 = "prep";
-        String str2 = "repp";
 
+    public static void m1(String str1, String str2) {
         if (str1.length() == str2.length()) {
             char ch1[] = str1.toCharArray();
             char ch2[] = str2.toCharArray();
@@ -19,38 +17,40 @@ public class S10_anagram {
             } else {
                 System.out.println("Not anagram");
             }
-            // To sort two char array
-
-            // for (int i = 0; i < ch2.length; i++) {
-            //     for (int j = 0; j < ch2.length; j++) {
-            //         if (ch1[i] < ch1[j]) {
-            //             char temp = ch1[i];
-            //             ch1[i] = ch1[j];
-            //             ch1[j] = temp;
-            //         }
-            //         if (ch2[i] < ch2[j]) {
-            //             char temp = ch2[i];
-            //             ch2[i] = ch2[j];
-            //             ch2[j] = temp;
-            //         }
-            //     }
-            // }
-
-            // boolean flag = false;
-            // for (int i = 0; i < ch2.length; i++) {
-            //     if (ch1[i] == ch2[i]) {
-            //         flag = true;
-            //     } else {
-            //         System.out.println("Not anagram");
-            //         flag = false;
-            //         break;
-            //     }
-            //     // System.out.println(ch1[i]+" : "+ch2[i]);
-            // }
-
-            // if (flag) {
-            //     System.out.println("It is Anagram");
-            // }
         }
+    }
+
+    public static void m2(String str1, String str2){
+        if (str1.length()!= str2.length()) {
+            System.out.println("Not anagram");
+        } else {
+            boolean status = false;
+            int count[] = new int[256];
+            for (int i = 0; i < str1.length(); i++) {
+                count[str1.charAt(i)]++;
+                count[str2.charAt(i)]--;
+            }
+
+            for (int i = 0; i < count.length; i++) {
+                if (count[i]==0) {
+                    status = true;
+                } else {
+                    status = false;
+                    break;
+                }
+            }
+
+            System.out.println(status==true?"Anagram":"not anagram");
+        }
+    }
+
+    public static void main(String[] args) {
+        String str1 = "p r ep".replaceAll("\\s", "").toLowerCase();
+        String str2 = "repp".replaceAll("\\s", "").toLowerCase();
+
+        // m1(str1, str2);
+
+        m2(str1, str2);
+
     }
 }
