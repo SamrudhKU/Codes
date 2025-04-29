@@ -18,7 +18,7 @@ public class TimeFormatChanger {
     }
     public static void main(String[] args) {
 
-      String time = "12:05:45PM";
+      String time = "06:05:45PM";
 
       System.out.println(timeConversion(time));
 

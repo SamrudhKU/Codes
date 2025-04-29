@@ -1,42 +1,24 @@
 public class pratice6 {
 
-    public static String stringReduction(String str) {
-        while (true) {
-
-            StringBuilder reduced = new StringBuilder();
-            boolean reductionStatus = false;
-            for (int i = 0; i < str.length(); i++) {
-                if (i < str.length() - 1 && str.charAt(i) != str.charAt(i + 1)) {
-                    reduced.append(reduction(str.charAt(i), str.charAt(i + 1)));
-                    reductionStatus = true;
-                    i++;
-                } else {
-                    reduced.append(str.charAt(i));
-                }
-
+    public static int search(int arr[], int target){
+        int low = 0;
+        int high = arr.length-1;
+        int mid = (low+high)/2;
+        while (low<=high) {
+            if (mid == target) {
+                return mid;
+            } else if (arr[mid] < target) {
+                low = mid+1;
+            } else {
+                high = mid-1;
             }
-            if (!reductionStatus) {
-                break;
-            }
-            str = reduced.toString();
         }
-
-        return str;
+        return -1;
+        
     }
-
-    private static char reduction(char c1, char c2) {
-        if ((c1 == 'A' && c2 == 'B' ) || (c1 == 'B' && c2 == 'A')) {
-            return 'C';
-        } else if ((c1 == 'B' && c2 == 'C') || (c1 == 'C' && c2 == 'B')) {
-            return 'A';
-        } else {
-            return 'B';
-        }
-    }
-
-    public static void main(String[] args) {
-
-        System.out.println(stringReduction("ABCABC").toUpperCase());
+    public static void main(String...Samrudh){
+        int arr[] = {1,2,3,4,5,6};
+        System.out.println(search(arr, 2));
 
     }
 }
