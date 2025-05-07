@@ -10,6 +10,7 @@ public class R19_longestCommonSequency {
             return Math.max(lcs(str1, str2, s1-1, s2), lcs(str1, str2, s1, s2-1));
         }
     }
+    
     public static void main(String...args){
 
         String str1 = "ABCDGH";

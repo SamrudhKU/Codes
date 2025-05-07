@@ -12,7 +12,7 @@ public class S16_findOccurance {
         }
     }
 
-    static public void m2(String str) {
+    public static void m2(String str) {
         boolean b[] = new boolean[str.length()];
         for (int i = 0; i < str.length(); i++) {
             int count = 0;
@@ -26,12 +26,11 @@ public class S16_findOccurance {
                 }
             }
             System.out.println(str.charAt(i) + ":" + count);
-
         }
     }
-
     public static void main(String... Samrudh) {
         String str = "asasdfewfs";
+        str = str.replaceAll("[,_$\\s]", "");
         m1(str);
         System.out.println();
         m2(str);

@@ -30,7 +30,6 @@ public class S10_anagram {
                 count[str1.charAt(i)]++;
                 count[str2.charAt(i)]--;
             }
-
             for (int i = 0; i < count.length; i++) {
                 if (count[i]==0) {
                     status = true;
@@ -39,18 +38,21 @@ public class S10_anagram {
                     break;
                 }
             }
-
             System.out.println(status==true?"Anagram":"not anagram");
         }
     }
-
     public static void main(String[] args) {
-        String str1 = "p r ep".replaceAll("\\s", "").toLowerCase();
-        String str2 = "repp".replaceAll("\\s", "").toLowerCase();
+        String str1 = "p,_ r ep";
+        str1 = str1.replaceAll("[,_$\\s]", "").toLowerCase();
+
+        String str2 = "repp";
+        str2 = str2.replaceAll("[,_$\\s]", "").toLowerCase();
 
         // m1(str1, str2);
-
         m2(str1, str2);
+
+        System.out.println((char)88);
+        System.out.println((int)'X');
 
     }
 }
