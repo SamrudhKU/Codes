@@ -1,5 +1,6 @@
 public class R19_longestCommonSequency {
     
+    // Radware codeing question: finding the longest common sequency
     public static int lcs(String str1, String str2, int s1, int s2){
         if(s1 == 0 || s2 == 0){
             return 0;
@@ -15,7 +16,9 @@ public class R19_longestCommonSequency {
 
         String str1 = "ABCDGH";
         String str2 = "AEDFHR";
-        // Solution: ADH
+        // Solution: ADH 
+        // matched element is 3
+        // ChartGPT
         int length = lcs(str1, str2, str1.length(), str2.length());
         System.out.println("Longest Common Sequence "+length);
     }

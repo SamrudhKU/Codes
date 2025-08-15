@@ -35,6 +35,3 @@
 # search_element = ['aaa','bbb','ccc']
 # print(find(3,data_arraya,search_element))
 
-a=56
-b=70
-print(a%b)
