@@ -1,7 +1,7 @@
 # ☕ Java Practice Codes
 
-This repository contains all Java programs I have practiced while learning Core Java, JDBC, Servlet, JSP, and other concepts.
-It serves as a collection of coding exercises, mini-projects, and examples for quick reference.
+This repository contains all Java programs I have practiced while learning Core Java, JDBC and other concepts.
+It serves as a collection of coding exercises and examples for quick reference.
 
 
 ## ✨ Topics Covered
