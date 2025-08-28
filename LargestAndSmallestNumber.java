@@ -9,7 +9,7 @@ public class LargestAndSmallestNumber {
         }
         return max;
     }
-
+    
     public static int secondLargest(int arr[]){
         int max = arr[0];
         int secondMax = 0;
